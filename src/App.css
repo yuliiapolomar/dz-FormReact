@@ -1,0 +1,54 @@
+.todo {
+  width: 25%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form-button {
+  border: none;
+  background: #1d61cf;
+  color: #fff;
+  cursor: pointer;
+  height: 31px;
+}
+.form-button:disabled {
+  background: #d0d5db;
+}
+
+.form-input {
+  height: 25px;
+  border-color: #d0d5db;
+  margin-right: 5px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-checkbox {
+  margin-right: 10px;
+}
+
+.list-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-button:disabled {
+  cursor: default;
+}
+
+.done {
+  text-decoration: line-through;
+}
