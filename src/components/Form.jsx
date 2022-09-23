@@ -1,9 +1,13 @@
 import React from "react";
+import { useContext } from "react";
 import { useState } from "react";
+import MyContext from "../providers/MyContext";
 
-const Form = ({addTask}) => {
+const Form = () => {
 
-    const[value, setValue] = useState('')
+    const {addTask} = useContext(MyContext)
+
+    const [value, setValue] = useState('')
 
     const onChange = (e) => {
         setValue(e.target.value)
@@ -13,6 +17,7 @@ const Form = ({addTask}) => {
         addTask(value)
         setValue('')
     }
+    
     return (
         <form>
             <input 
